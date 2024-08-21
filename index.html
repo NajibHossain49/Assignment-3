@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en " data-theme="light">
+
+<head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Rinterio</title>
+
+    <!-- Link to custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to DaisyUI CSS framework for component styling -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Link to Tailwind CSS CDN for utility-first CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Link to Google Fonts for Manrope font -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link to Remix Icon CDN for icon fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Tailwind CSS configuration script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d', // Custom color added to Tailwind CSS
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Header section of the page -->
+    <header class="container mx-auto px-4">
+        <nav class="">
+            <div class="container mx-auto flex items-center justify-between p-4">
+                <!-- Left side: Arrow Icon and Logo Text -->
+                <div class="flex items-center space-x-4">
+                    <i
+                        class="ri-arrow-right-up-line bg-[#ABEF5F] text-xl sm:text-2xl text-black p-2 sm:p-3 rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center"></i>
+                    <a href="#" class="text-3xl sm:text-4xl font-bold text-gray-800">Rinterio</a>
+                </div>
+
+                <!-- Middle: Nav Links (hidden on small screens) -->
+                <div class="hidden sm:flex flex-1 justify-center space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800">Services</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800">Portfolio</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
+                </div>
+
+                <!-- Right side: Icons and Button (hidden on small screens) -->
+                <div class="hidden sm:flex items-center space-x-4">
+                    <!-- Remix Icon search icon -->
+                    <i
+                        class="ri-search-line bg-[#E9E9E9] text-xl sm:text-2xl text-gray-800 p-2 sm:p-3 rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center"></i>
+
+                    <!-- Remix Icon shopping-cart icon -->
+                    <i
+                        class="ri-shopping-cart-2-line bg-[#E9E9E9] text-xl sm:text-2xl text-gray-800 p-2 sm:p-3 rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center"></i>
+
+                    <!-- Button with Icon -->
+                    <button
+                        class="bg-[#ABEF5F] text-black font-bold text-lg py-2 px-4 sm:px-6 rounded-full flex items-center space-x-2">
+                        <span>Book Consult</span>
+                        <i
+                            class="ri-arrow-right-up-line text-xl sm:text-2xl bg-black text-white p-1 sm:p-2 rounded-full w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center"></i>
+                    </button>
+                </div>
+
+                <!-- Hamburger Menu Icon (visible on small screens) -->
+                <div class="flex sm:hidden items-center">
+                    <button class="text-3xl text-gray-800">
+                        <i class="ri-menu-line"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (hidden by default, shown when toggled) -->
+            <div id="mobile-menu" class="hidden sm:hidden flex-col space-y-4 p-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Services</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Portfolio</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Contact</a>
+
+            </div>
+        </nav>
+
+        <div class="flex flex-col items-center justify-center min-h-screen  p-4">
+            <!-- Image -->
+            <img src="assets/banner.png" alt="Barn House" class="w-full max-w-md mb-6 rounded-lg ">
+
+            <!-- Heading -->
+            <h1 class="sm:w-full w-8/12 text-3xl lg:text-6xl font-extrabold text-center text-gray-800 mb-5">
+                A barn house of this design has a striking appearance
+            </h1>
+
+
+
+            <!-- Paragraph -->
+            <p class="w-4/6 lg:text-base md:text-xl text-center text-gray-600 mb-6">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+                wood, sleek metal accents, and large windows that flood the space with natural light.
+            </p>
+
+            <!-- Button -->
+            <button
+                class="w-full sm:w-auto bg-[#ABEF5F80] text-black font-bold text-lg py-2 px-4 sm:px-6 rounded-full flex items-center justify-center text-center space-x-2">
+                <span>View Details</span>
+                <i
+                    class="ri-arrow-right-up-line text-xl sm:text-2xl bg-[#ABEF5F] text-gray-700 p-1 sm:p-2 rounded-full w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center"></i>
+            </button>
+
+        </div>
+
+
+
+    </header>
+
+    <!-- Main content area -->
+    <main class="">
+        <section class="">
+            <!-- Main content goes here -->
+
+
+        </section>
+    </main>
+
+</body>
+
+</html>
