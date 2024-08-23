@@ -40,3 +40,5 @@ Contributions are welcome! Please open issues, submit pull requests, or provide 
 
 ---
 
+![HomeNest Project](./Desktop-view.jpeg)
+
