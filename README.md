@@ -18,7 +18,7 @@
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/NajibHossain49/HomeNest-.git
+   git clone https://github.com/NajibHossain49/Assignment-3.git
    ```
 
 2. **Navigate to the Project Directory**
