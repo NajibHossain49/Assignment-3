@@ -23,7 +23,7 @@
 
 2. **Navigate to the Project Directory**
    ```bash
-   cd HomeNest-
+   cd Assignment-3
    ```
 
 
